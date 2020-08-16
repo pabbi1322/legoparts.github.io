@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.background{
+    width: 100%;
+    padding: 0ex;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(./photos/black-and-silver-dumbbells-3931367.jpg);
+    height: 588px;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    border-radius: 50px;
+    position: relative;
+}
+
+.navbar{
+    background-color: transparent;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 100px;
+    justify-content: space-between;
+    padding: 8px 10px;
+    align-items: center;
+    margin: 2px 18px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar .options a{
+    font-weight: bolder;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+   .navbar a:hover{
+     color: white;
+     background-color: black;
+     border-radius: 100px;
+}
+.social{
+    align-items: center;
+    margin: 0px;
+    padding: 0ex;
+}
+.social li{
+    margin: 2px 12px;
+}
+.social i:hover{
+    transform: scale(1.5);
+}
+.text h1{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.text p{
+    margin-top: 0;
+    font-size: 35px;
+    color:black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.text{
+    position: relative;
+    text-align: center;
+}
+.text a{
+    color: black;
+}
+.text button{
+    background-color: red;
+    outline: none;
+    border: none;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+    margin: 80px;
+    text-decoration: none;
+    color: black;
+}
+.text button:hover{
+    transform: scale(1.5);
+}
+@media screen and (max-width:750px){
+    .navbar{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .social{
+        font-size: 13px;
+        padding-top: 18px;
+    }
+    .text h1{
+        margin-top: 19px;
+    }
+    .pricing-card{
+    flex: 50%;
+    }
+}
+.pricing-table{
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: min(1600px, 100%);
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+.pricing-card{
+    flex: 1px;
+    background-color: black;
+    margin: 20px 10px;
+    color: blanchedalmond;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s linear;
+    position: reletive;
+}
+.pricing-card-header{
+      background-color: red;
+      display: inline-block;
+      color: black;
+      padding:  17px 37px;
+      border-radius: 0 0 20px 20px;
+      font-size: 20px;
+      font-weight: 600;
+      transition: .4s linear;    
+}
+.pricing-card:hover{
+    background-color: red;
+    transition: .2s ease-in;
+    color: black;
+}
+.price{
+    font-size: 70px;
+    color: red;
+    margin: 40px 0;
+    transition: .2s linear;
+}
+.price sup, .price span{
+    font-size: 22px;
+}
+.order-btn, .price{
+    color: white;
+    transition: .2s linear;
+}
+.pricing-card li{
+    font-size: 16px;
+    padding: 8px 0;
+    
+}
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 2px solid white;
+    padding: 14px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: .3s linear;
+    color: white;
+}
+.order-btn:hover{
+    background-color:black;
+    color: white;
+    border-radius: 40px;
+    transition: .2s ease-in;
+}
